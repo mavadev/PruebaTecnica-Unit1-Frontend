@@ -5,6 +5,7 @@ Maquetado Web realizado a base del diseño enviado en [Figma](https://www.figma.
 ## Contenido
   - [Instalación](#-instalación)
   - [Tecnologias Utilizadas](#%EF%B8%8F-tecnologias-utilizadas)
+  - [Vistas Previas](#-vistas-previas)
 
 ## 🚀 Instalación
 1. Clona el repositorio.
@@ -18,3 +19,21 @@ Maquetado Web realizado a base del diseño enviado en [Figma](https://www.figma.
 * [Sass](https://sass-lang.com/) - Preprocesador CSS con características propias de los lenguajes de programación, como pueden ser variables, funciones, selectores anidados, herencia, etc, las cuales nos permiten la reducción del tiempo para crear y mantener el CSS.
 * [React](https://es.reactjs.org/) - Librería Web usada porque se basa en componentes la cual es una de las claves que permiten mejor escalabilidad en las aplicaciones que se desarrollan. Teniendo la posibilidad de crear desde componente muy simples hasta estructuras más complejas.
 * [Framer Motion](https://www.framer.com/motion/) - Animaciones de la aplicación con una gran API simple sin llenar nuestros componentes con código adicional lo que significa que la base de código es más fácil de leer y mantener.
+
+## 📸 Vistas Previas
+
+<table>
+  <tr>
+    <td rowspan="2" width='32%' >
+      <img src="https://user-images.githubusercontent.com/82333673/166121106-0ff884a1-e7d2-4d5c-bd79-dc105c9112a8.png">
+    </td>
+    <td>
+      <img src="https://user-images.githubusercontent.com/82333673/166121042-8adcefe7-9002-4498-90e9-b6ae2dcecb0e.png">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/82333673/166121056-5119366b-80e0-43e5-be7a-ff1e648bce80.png">
+    </td>
+  </tr>
+</table>
