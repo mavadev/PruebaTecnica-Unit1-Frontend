@@ -29,8 +29,7 @@ Este repositorio consta de tres archivos:
     Si, porque nos provee de muchas ventajas como: brindarnos componentes visuales pre-armados con un cierto estilo para cada componente a realizar, estilos para el rápido diseño responsivo de la aplicación, la seguridad en la usabilidad del código que nos brinda y lo más importante que es poder ahorrar tiempo para avanzar con la lógica de nuestra aplicación. No lo usaría cuando la página cuenta con un diseño a seguir con estilos personalizados debido a que los diseños predefinidos por el framework no me serán de mucha ayuda al ser gran parte personalizado, en demás casos si lo utilizaría.
 
 ### Enlaces a los demás ejercicios:
-  
-  - [Ejercicios de lógica]()
-  - [Maquetado web]()
+  - [Ejercicios de lógica](https://github.com/GianmarcoVc/Tech-Eval-Unit1-Frontend/blob/master/exercises.js)
+  - [Maquetado web](https://github.com/GianmarcoVc/Tech-Eval-Unit1-Frontend/blob/master/front)
   
 ### ✨ Gracias de antemano por considerarme para este desafío.
