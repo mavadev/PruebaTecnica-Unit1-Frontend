@@ -1,0 +1,169 @@
+{
+  "objects_box": [
+    {
+      "id": 1,
+      "name": "FARO Helmet",
+      "icon": "Faro"
+    },
+    {
+      "id": 2,
+      "name": "User Manual",
+      "icon": "Umanual"
+    },
+    {
+      "id": 3,
+      "name": "Navigation Remote",
+      "icon": "NavRemote"
+    },
+    {
+      "id": 4,
+      "name": "Rubber bands",
+      "icon": "RubberBands"
+    },
+    {
+      "id": 5,
+      "name": "USB Type-C Charging Cable",
+      "icon": "UsbC"
+    }
+  ],
+  "tech_specs": [
+    {
+      "id": 1,
+      "title": "Front & rear lights",
+      "icon": "Helmet",
+      "list": [
+        {
+          "id": 1,
+          "title": "Total output",
+          "description": "+500 lumens"
+        },
+        {
+          "id": 2,
+          "title": "Weight",
+          "description": "580g *Medium size non-Mips"
+        },
+        {
+          "id": 3,
+          "title": "Construction",
+          "description": "ABS + PS shell + EPS liner"
+        },
+        {
+          "id": 4,
+          "title": "Ventilation",
+          "description": "Fixed (5 vents)"
+        },
+        {
+          "id": 5,
+          "title": "Waterproofing",
+          "description": "I-PX6"
+        },
+        {
+          "id": 6,
+          "title": "Certifications",
+          "description": "CPSC EN1078, AS NZS 2063:2008"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Companion App",
+      "icon": "App",
+      "list": [
+        {
+          "id": 1,
+          "title": null,
+          "description": "Fall Detection"
+        },
+        {
+          "id": 2,
+          "title": null,
+          "description": "Light Customization"
+        },
+        {
+          "id": 3,
+          "title": null,
+          "description": "Ride Tracking"
+        },
+        {
+          "id": 4,
+          "title": null,
+          "description": "Weather Responsive"
+        },
+        {
+          "id": 5,
+          "title": null,
+          "description": "Ambient Light Responsive"
+        },
+        {
+          "id": 6,
+          "title": null,
+          "description": "CO2 Prevention"
+        },
+        {
+          "id": 7,
+          "title": null,
+          "description": "Daily Challenges"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Navigation Remote",
+      "icon": "NavRemote",
+      "list": [
+        {
+          "id": 1,
+          "title": "Battery life",
+          "description": "30 hs of continued use"
+        },
+        {
+          "id": 2,
+          "title": "Battery type",
+          "description": "Rechargeable Lithium-ion"
+        },
+        {
+          "id": 3,
+          "title": "Charging",
+          "description": "USB Type-C"
+        },
+        {
+          "id": 4,
+          "title": "Dimensions",
+          "description": "34x34x46mm"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Battery",
+      "icon": "Battery",
+      "list": [
+        {
+          "id": 1,
+          "title": "Capacity",
+          "description": "1850 MAh"
+        },
+        {
+          "id": 2,
+          "title": "Type",
+          "description": "Rechargeable Lithium-ion"
+        },
+        {
+          "id": 3,
+          "title": "Duration",
+          "description": "Up to 10hs"
+        },
+        {
+          "id": 4,
+          "title": "Full Charge",
+          "description": "3 hs"
+        },
+        {
+          "id": 5,
+          "title": "Charging Port",
+          "description": "USB Type-C"
+        }
+      ]
+    }
+  ]
+}

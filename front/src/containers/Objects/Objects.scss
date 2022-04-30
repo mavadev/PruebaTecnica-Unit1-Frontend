@@ -1,0 +1,79 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+#objects{
+  width: 100%;
+  height: 386px;
+  #content{
+    display: none;
+    position: absolute;
+    inset: 0;   
+    top: 90px; // tamaño del espacio transparente de la imagen
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    #listObjects{
+      display: grid;
+      padding: 30px;
+      position: relative;
+      grid-template-columns: max-content;
+    }
+    #listChecks .checkIcon{
+      position: absolute;
+      transform: scale(0);
+      background-color: $primary;
+      @include boxRounded($size: 46px, $border: 1.2px, $borColor: $primaryLow);
+      transition: transform .5s ease;
+      &.active{
+        transform: scale(1);
+      }
+      &#Faro{
+        top: -20%;
+        @include distance($value: 280px);
+      }
+      &#Umanual{
+        bottom: 20%;
+        @include distance($value: 320px);
+      }
+      &#NavRemote{
+        bottom: 26%;
+        @include distance($value: 143px);
+      }
+      &#RubberBands{
+        bottom: 17%;
+        @include distance($value: 220px);
+      }
+      &#UsbC{
+        bottom: 13%;
+        @include distance($value: 130px);
+      }
+    }
+  }
+  #background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 735px){
+  #objects {
+    height: 100%;
+    #content{
+      display: flex;
+    }
+  }
+}
+@media screen and (min-width: 1069px){
+  #objects #content {
+    #listObjects{
+      padding: 0px 0px 0px 40px;
+      grid-template-columns: repeat(2, max-content);
+      .object:last-child{
+        grid-column: 1/3;
+      }
+    }
+    #listChecks .checkIcon#Umanual{
+      @include distance($value: 380px);
+    }
+  }
+}

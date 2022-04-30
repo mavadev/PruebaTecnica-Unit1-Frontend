@@ -1,0 +1,31 @@
+@import '../../sass/mixins.scss';
+
+#specs{
+  padding: 60px 25px;
+  #specs_title{
+    font-size: 32px;
+    margin-bottom: 40px;
+    line-height: 34.56px;
+  }
+  #specs_list{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 424px;
+    @include flex($gap: 24px, $column: true, $align: false, $between: false);
+  }
+}
+@media screen and (min-width: 735px){
+  #specs{
+    padding: 0px 0px 80px;
+    #specs_list{
+      gap: 32px;
+      max-width: initial;
+      flex-direction: row;
+    }
+  }
+}
+@media screen and (min-width: 1069px){
+  #specs #specs_list{
+    gap: 40px;
+  }
+}

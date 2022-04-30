@@ -1,0 +1,26 @@
+@mixin distance($value){
+  left: calc(50% - 23px + $value);
+}
+@mixin flex($gap, $column, $align, $between){
+  display: flex;
+  gap: $gap;
+  @if $column {
+    flex-direction: column;
+  }
+  @if $align {
+    align-items: center;
+  }
+  @if $between {
+    justify-content: space-between;
+  }
+}
+@mixin boxRounded($size, $border, $borColor){
+  width: $size;
+  height: $size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: $border solid $borColor;
+}

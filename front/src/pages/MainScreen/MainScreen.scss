@@ -1,0 +1,23 @@
+#mainScreen{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: content-box;
+  .title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 735px){
+  #mainScreen{
+    max-width: 810px;
+    padding: 0px 20px;
+    .title{
+      display: none;
+    }  
+  }
+}
+@media screen and (min-width: 1069px){
+  #mainScreen{
+    max-width: 1140px;
+  }
+}

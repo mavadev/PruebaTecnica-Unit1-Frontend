@@ -1,0 +1,54 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+.object{
+  padding: 12px 20px;
+  @include flex($gap: 16px, $column: false, $align: true, $between: false);
+  .object_icon{
+    position: relative;
+    @include boxRounded($size: 48px, $border: 1px, $borColor: $gray);
+    .icon_background, .icon path{
+      transition: all .5s ease;
+    }
+    .icon_background{
+      width: 0%;
+      height: 0%;
+      z-index: -1;
+      position: absolute;
+      border-radius: 100%;
+      background: white;
+    }
+    &.checked{
+      animation: hideBorder .1s ease forwards;
+      animation-delay: .3s;
+      @keyframes hideBorder {
+        to{ border: 0px }
+      }
+      .icon_background{
+        width: 100%;
+        height: 100%;  
+      }
+      .icon path{
+        fill: #FF5640;
+      }
+    }  
+  }
+  .object_name{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 1069px){
+  .object {
+    padding: 20px;
+    .object_icon{
+      width: 60px;
+      height: 60px;
+      .icon{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import '../../sass/mixins.scss';
+
+.specification{
+  width: 100%;
+  margin: 0 auto;
+  .header{
+    padding-bottom: 8px;
+    border-bottom: .5px solid #F2F2F7;
+    @include flex($gap: 0px, $column: false, $align: true, $between: true);
+    .header_title{
+      font-size: 17px;
+      font-weight: 500;
+    }
+    .header_icons{
+      @include flex($gap: 10px, $column: false, $align: true, $between: false);
+      .iconDrop{
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        transform: rotate(0deg);
+        transition: transform .3s ease;
+        &.visible{
+          transform: rotate(-180deg);
+        }
+      }
+    }
+  }
+  .listDetails{
+    overflow: hidden;
+    @include flex($gap: 8px, $column: true, $align: false, $between: false);
+    .detail{
+      font-size: 12px;
+      line-height: 16.2px;
+      .detail_title{
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 735px){
+  .specification{
+    .header{
+      padding-bottom: 10px;
+      .header_title{
+        font-size: 20px;
+      }
+      .header_icons .iconDrop{
+        display: none;
+      }  
+    }
+    .listDetails{
+      gap: 10px;
+      padding: 20px 0px 0px !important;
+      .detail{
+        font-size: 15px;
+        line-height: 20.25px;
+      }  
+    }
+    &:nth-child(2){
+      order: 1;
+    }
+    &:nth-child(4){
+      order: 2;
+    }
+  }
+}
+@media screen and (min-width: 1069px){
+  .specification{
+    .header{
+      padding-bottom: 12px;
+    }
+    .listDetails{
+      gap: 12px;
+      padding-top: 24px !important;
+      .detail{
+        font-size: 16px;
+        line-height: 21.6px;
+      }  
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
+
+#navegation{
+  z-index: 3;
+  padding: 40px 0px;
+  position: relative;
+  @include flex($gap: 20px, $column: false, $align: true, $between: false);
+  .nav_link, .nav_icon *{
+    transition: all .5s ease;
+  } 
+  .nav_link{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 30px;
+    &.desactive{
+      color: $grayLow;
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+  .nav_icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    margin-left: auto;
+    flex-direction: column;
+    .box_icons{
+      height: 12px;
+      display: flex;
+      width: max-content;
+      .icon{
+        height: 100%;
+      }
+      &.bot{
+        transform: translateX(-24px);
+      }
+    }
+    &:hover .box_icons{
+      .icon{
+        path{
+          fill: $primary;
+        }
+      }
+      &.top{
+        animation: moveLeft 1s ease forwards;
+        @keyframes moveLeft {
+          to { transform: translateX(-24px)}
+        }
+      }
+      &.bot{
+        animation: moveRight 1s ease forwards;
+        @keyframes moveRight {
+          to { transform: translateX(0px)}
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1069px){
+  #navegation{
+    gap: 32px;
+    .nav_link{
+      font-size: 30px;
+    }  
+  }  
+}
